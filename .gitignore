@@ -1,0 +1,24 @@
+# General
+.DS_Store
+node_modules/
+dist/
+build/
+.env
+.venv/
+__pycache__/
+
+# Go
+services/api/bin/
+services/api/build/
+
+# Python
+services/worker/.venv/
+services/worker/.pytest_cache/
+
+# Vite/React
+services/web/node_modules/
+services/web/dist/
+
+# IDE
+.idea/
+.vscode/
