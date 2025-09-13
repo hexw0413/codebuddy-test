@@ -1,0 +1,44 @@
+server:
+  port: 8080
+  mode: production
+  
+database:
+  host: postgres
+  port: 5432
+  user: csgo2_user
+  password: csgo2_password
+  dbname: csgo2_trading
+  sslmode: disable
+  
+redis:
+  host: redis
+  port: 6379
+  password: ""
+  db: 0
+  
+steam:
+  api_key: ${STEAM_API_KEY}
+  login_url: https://steamcommunity.com/openid/login
+  callback_url: ${STEAM_CALLBACK_URL}
+  shared_secret: ${STEAM_SHARED_SECRET}
+  identity_secret: ${STEAM_IDENTITY_SECRET}
+  
+trading:
+  buff:
+    enabled: true
+    base_url: https://buff.163.com
+    app_id: ${BUFF_APP_ID}
+    app_secret: ${BUFF_APP_SECRET}
+    cookie: ${BUFF_COOKIE}
+  
+  youpin:
+    enabled: true
+    base_url: https://www.youpin898.com
+    api_key: ${YOUPIN_API_KEY}
+    api_secret: ${YOUPIN_API_SECRET}
+  
+  auto_trade:
+    enabled: false
+    max_orders_per_day: 100
+    min_profit_percent: 5.0
+    max_investment: 10000.0
